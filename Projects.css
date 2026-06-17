@@ -1,0 +1,86 @@
+.projects { background: #f0ebe3; }
+
+.projects-sub {
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.project-card:hover, .project-card.active {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+.card-accent {
+  height: 5px;
+  width: 100%;
+}
+
+.card-body { padding: 2rem; }
+
+.card-tag {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--navy);
+  margin: 0.5rem 0 0.75rem;
+}
+
+.card-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-chip {
+  background: #f0ebe3;
+  color: var(--navy);
+  font-size: 0.72rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card-expanded {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #f0ebe3;
+}
+
+.card-expanded p {
+  font-size: 0.85rem;
+  color: #4a7c6f;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}

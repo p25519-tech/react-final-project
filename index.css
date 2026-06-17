@@ -1,0 +1,61 @@
+html { scroll-behavior: smooth; }
+
+.page { padding-top: 80px; min-height: 100vh; }
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #0f1b2d;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2.2rem;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #c9a84c;
+  color: #0f1b2d;
+  border: 2px solid #c9a84c;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: #c9a84c;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #0f1b2d;
+  border: 2px solid #0f1b2d;
+}
+
+.btn-outline:hover {
+  background: #0f1b2d;
+  color: #f8f4ee;
+}
